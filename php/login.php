@@ -23,7 +23,7 @@ if (
       exit;
    } else {
 
-      $sql = "SELECT * FROM users WHERE username = ?";
+      $sql = "SELECT * FROM course WHERE username = ?";
       $stmt = $conn->prepare($sql);
       $stmt->execute([$uname]);
 

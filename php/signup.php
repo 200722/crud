@@ -55,7 +55,7 @@ if (
                move_uploaded_file($tmp_name, $img_upload_path);
 
                // Insert into Database
-               $sql = "INSERT INTO users(fname,text, username, password, pp) 
+               $sql = "INSERT INTO course(fname,text, username, password, pp) 
                  VALUES(?,?,?,?,?)";
                $stmt = $conn->prepare($sql);
                $stmt->execute([$fname, $text, $uname, $pass, $new_img_name]);
@@ -73,7 +73,7 @@ if (
             exit;
          }
       } else {
-         $sql = "INSERT INTO users(fname,text,username, password) 
+         $sql = "INSERT INTO course(fname,text,username, password) 
        	        VALUES(?,?,?,?)";
          $stmt = $conn->prepare($sql);
          $stmt->execute([$fname, $text, $uname, $pass]);

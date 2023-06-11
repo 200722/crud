@@ -61,7 +61,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['text
 
 
                         // Delete the Database
-                        $sql = "DELETE FROM `users` WHERE id=$id";
+                        $sql = "DELETE FROM `course` WHERE id=$id";
                         $stmt = $conn->prepare($sql);
                         $stmt->execute([$fname, $text, $uname, $new_img_name, $id]);
                         $_SESSION['fname'] = $fname;
@@ -78,7 +78,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['text
                     exit;
                 }
             } else {
-                $sql = "DELETE FROM `users` WHERE id=$id";
+                $sql = "DELETE FROM `course` WHERE id=$id";
                 $stmt = $conn->prepare($sql);
                 $stmt->execute([$fname, $text, $uname, $id]);
 

@@ -61,7 +61,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['text
 
 
                   // update the Database
-                  $sql = "UPDATE users 
+                  $sql = "UPDATE course
                        SET fname=?, text=?,username=?, pp=?
                        WHERE id=?";
                   $stmt = $conn->prepare($sql);
@@ -80,7 +80,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['text
                exit;
             }
          } else {
-            $sql = "UPDATE users 
+            $sql = "UPDATE course
        	        SET fname=?,text=?, username=?
                 WHERE id=?";
             $stmt = $conn->prepare($sql);

@@ -1,7 +1,7 @@
 <?php 
 
 function getUserById($id, $db){
-    $sql = "SELECT * FROM users WHERE id = ?";
+    $sql = "SELECT * FROM course WHERE id = ?";
 	$stmt = $db->prepare($sql);
 	$stmt->execute([$id]);
     
@@ -12,5 +12,3 @@ function getUserById($id, $db){
         return 0;
     }
 }
-
- ?>
