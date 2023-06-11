@@ -13,7 +13,7 @@
    -- https://www.phpmyadmin.net/
    --
    -- Host: 127.0.0.1
-   -- Gegenereerd op: 11 jun 2023 om 21:14
+   -- Gegenereerd op: 11 jun 2023 om 22:35
    -- Serverversie: 10.4.28-MariaDB
    -- PHP-versie: 8.2.4
 
@@ -33,10 +33,10 @@ SET time_zone = "+00:00";
 ---
 
 --
--- Tabelstructuur voor tabel `users`
+-- Tabelstructuur voor tabel `course`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `course` (
 `id` int(11) NOT NULL,
 `fname` varchar(255) NOT NULL,
 `text` varchar(255) NOT NULL,
@@ -46,10 +46,10 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Gegevens worden geëxporteerd voor tabel `users`
+-- Gegevens worden geëxporteerd voor tabel `course`
 --
 
-INSERT INTO `users` (`id`, `fname`, `text`, `username`, `password`, `pp`) VALUES
+INSERT INTO `course` (`id`, `fname`, `text`, `username`, `password`, `pp`) VALUES
 (1, 'k', '', 'k', '$2y$10$EuJ6GOkXEgBT2AkT5awKQegmZCHtDEG6iRSd.H5f7/VAKWnTW/Rsi', 'k6483f2dcbe5df0.81574134.jpeg'),
 (2, 'Reem', '', 'reem rafghad mmmm', '$2y$10$xM1Y5cJ6sI9KInJ6ggZacuT2dOnc9VfP67O6BalEIKaEPNu3QPAs2', 'reem rafghad mmmm64857a1c773101.56387182.jpeg'),
 (3, 'r', '', 'r', '$2y$10$DeN7l1dOGRDM50tnIIsVkOnBepD4IgT37iHNARsFeslPXoT4bsD3a', 'r64857a58ba9e39.95766990.jpeg'),
@@ -58,16 +58,17 @@ INSERT INTO `users` (`id`, `fname`, `text`, `username`, `password`, `pp`) VALUES
 (6, 'ee', '', 'r', '$2y$10$j/Vfz4xj3SVhdhpBcHgttO08cge23bJbnGg.LoCt6c8I3gvdHg1nG', 'r64859756714291.47943628.jpeg'),
 (7, 'e', '', 'rr', '$2y$10$PLc8VpuXmraxrr/jh6JCE..3AagcNzDlaAVaD7KCyNdpuTULk9d7q', 'rr648597793e91d0.63607805.jpeg'),
 (8, 'r', 'hhhh', 'e', '$2y$10$6xR7qC/Wk4vV/LDKUg.SmODgsi2Xtj3o3gHbbh/Ye41fkCHzxy2.C', 'e64859b36cce480.01890489.jpeg'),
-(9, 'eeeeeeeeeeee', 'eeeeeeeeeeeeeeeeeeeeeee', 'w', '$2y$10$azIgijr2OcTXoxafGZjq7OAnIHgxJdSgUjacajp7fxZFJwuGyoiNS', 'w6485b85697f230.12012756.jpeg');
+(9, 'eeeeeeeeeeee', 'eeeeeeeeeeeeeeeeeeeeeee', 'w', '$2y$10$azIgijr2OcTXoxafGZjq7OAnIHgxJdSgUjacajp7fxZFJwuGyoiNS', 'w6485b85697f230.12012756.jpeg'),
+(10, 'ff', 'ff', 'reem', '$2y$10$66tEqjCFfTM2v1XgnofyheXqrDyaxKeZYl3wXaCdMgvOc0MvW2wn2', 'reem64862fff87a7d5.33115452.jpeg');
 
 --
 -- Indexen voor geëxporteerde tabellen
 --
 
 --
--- Indexen voor tabel `users`
+-- Indexen voor tabel `course`
 --
-ALTER TABLE `users`
+ALTER TABLE `course`
 ADD PRIMARY KEY (`id`);
 
 --
@@ -75,10 +76,10 @@ ADD PRIMARY KEY (`id`);
 --
 
 --
--- AUTO_INCREMENT voor een tabel `users`
+-- AUTO_INCREMENT voor een tabel `course`
 --
-ALTER TABLE `users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+ALTER TABLE `course`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /_!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT _/;
